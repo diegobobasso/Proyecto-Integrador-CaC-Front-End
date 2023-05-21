@@ -95,20 +95,34 @@ header {
     max-height: 100%;
 }
 
+@media screen and (max-width: 800px) {
+    .tamres{
+    font-size: 70%;
+
+    }
+        
+  }
+
+@media screen and (max-width: 500px) {
+    .tamres{
+    font-size: 50%;
+
+    }
+        
+  }
+
+ 
 .ancho {
     height: 100%;
+}
+
+.bgceleste {
+    background-color: rgba(6, 200, 248, 0.39);
 }
 
 .bgazul {
     background-color: rgba(38, 58, 114, 0.993);
 }
-
-.centratarjeta {
-    padding-top: 1rem;
-    padding-left: 19rem;
-    padding-right: 19rem;
-}
-
 
 .clearfix {
     overflow: auto;

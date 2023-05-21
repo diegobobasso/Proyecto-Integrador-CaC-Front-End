@@ -35,7 +35,7 @@
                     
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                          <a class="nav-link text-light" href="index.html">La conferencia</a>
+                          <a class="nav-link txtgrey" href="index.html">La conferencia</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link txtgrey" href="#">Los oradoreses</a>
@@ -54,10 +54,10 @@
                     </div>
                 </div>
             </nav>
-
-            <div class="container-fluid centratarjeta">
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
+              
+            <div class="container-fluid">
+            <div class="row col-12 g-3 p-5 mb-3 text-center">
+                <div class="col-12 col-sm-6 col-md-4">
                   <div class="card mb-4 shadow-sm border-primary">
                     <div class="card-body">
                       <h3 class="card-title pricing-card-title">Estudiante</h3>
@@ -69,7 +69,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-4">
                   <div class="card mb-4 shadow-sm border-success">
                     <div class="card-body">
                       <h3 class="card-title pricing-card-title">Trainee</h3>
@@ -81,7 +81,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-sm-6 col-md-4">
                   <div class="card mb-4 shadow-sm border-warning">
                     <div class="card-body">
                       <h3 class="card-title pricing-card-title">Junior</h3>
@@ -126,25 +126,25 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="cantidad" type="number" class="form-control" value="1" name="cantidad">
+                            <input id="cantidad" type="text" class="form-control" value="1" name="cantidad">
                         </div>
                         <div class="col">
-                            <select id="categoria" name="categoria">
+                            <select id="categoria" class="form-select" size="1"  name="categoria">
                                 <option value="estudiante">Estudiante</option>
                                 <option value="trainee">Trainee</option>
                                 <option value="junior">Junior</option>
                               </select>
                         </div>
                     </div>
-                    <div class="container-fluid p-4">
-                        <p id="parra">Total a Pagar: $ <span id="pago">  </span></p>
+                    <div class="container-fluid p-3 mt-3 mb-3 rounded-1 bgceleste">
+                        <p>Total a Pagar: $ <span id="pago">  </span></p>
                     </div>
                     <div class="row mb-2">
                         <div class="col">
                             <button class="w-100 btn btn-lg btngreen" type="reset">Borrar</button>
                         </div>
                         <div class="col">
-                            <button id="resumen" class="w-100 btn btn-lg btngreen">Resumen</button>    
+                            <button id="resumen" class="w-100 btn btn-lg btngreen" type="button">Resumen</button>    
                         </div>
                     </div>
                 </form>

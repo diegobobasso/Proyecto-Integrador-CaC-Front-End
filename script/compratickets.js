@@ -4,16 +4,25 @@ let pago = document.getElementById("pago");
 let botonresumen = document.getElementById("resumen");
 
 function TotalPago() {
-    let cant = parseInt(cantidad.value);
-    let cate = categoria.value;
-    let desc = 0;
-    if(cate == "estudiante") desc = 0.20;
-    if(cate == "trainee") desc = 0.5;
-    if(cate == "junior") desc = 0.85;
     
-    let total = 200 * cant * desc;
+    const regex = /^[0-9]*$/;
+    if(regex.test(cantidad.value)) {
 
-    pago.innerHTML = total.toString();
+        let cant = parseInt(cantidad.value);
+        let cate = categoria.value;
+        let desc = 0;
+        
+        if(cate == "estudiante") desc = 0.20;
+        if(cate == "trainee") desc = 0.5;
+        if(cate == "junior") desc = 0.85;
+    
+        let total = 200 * cant * desc;
+
+        pago.innerHTML = total.toString();
+    }
+    else {
+        pago.innerHTML = "0";    
+    }
 }
 
 botonresumen.onclick = TotalPago;
